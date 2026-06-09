@@ -1,0 +1,42 @@
+[Nemo Action]
+Active=true
+
+#Name
+
+Name=Set as Wallpaper
+Name[it]=Imposta come sfondo del Desktop
+Name[fr]=Définir comme fond d'écran
+Name[de]=Als Hintergrundbild festlegen
+Name[es]=Establecer como fondo de pantalla
+Name[pt]=Definir como plano de fundo
+Name[ru]=Установить как обои
+Name[ja]=壁紙に設定
+Name[zh_CN]=设置为壁纸
+Name[nl]=Instellen als achtergrond
+Name[pl]=Ustaw jako tapetę
+Name[tr]=Duvar Kağıdı Olarak Ayarla
+Name[ar]=تعيين كخلفية
+
+# Comment
+
+Comment=Sets the current image as desktop background
+Comment[it]=Imposta l'immagine corrente come sfondo del desktop
+Comment[fr]=Définit l'image actuelle comme fond d'écran
+Comment[de]=Legt das aktuelle Bild als Hintergrundbild fest
+Comment[es]=Establece la imagen actual como fondo de pantalla
+Comment[pt]=Define a imagem atual como plano de fundo
+Comment[ru]=Устанавливает текущее изображение как обои для рабочего стола
+Comment[ja]=現在の画像をデスクトップの壁紙に設定します
+Comment[zh_CN]=将当前图像设置为桌面壁纸
+Comment[nl]=Stelt de huidige afbeelding in als bureaubladachtergrond
+Comment[pl]=Ustawia bieżący obraz jako tapetę pulpitu
+Comment[tr]=Geçerli görüntüyü masaüstü arka planı olarak ayarlar
+Comment[ar]=يعين الصورة الحالية كخلفية لسطح المكتب
+
+#Others
+
+Exec=bash -c 'gsettings set org.gnome.desktop.background picture-uri "file://%P" && gsettings set org.gnome.desktop.background picture-uri-dark "file://%P"'
+Icon-Name=image-x-generic
+Selection=s
+Extensions=.jpg;.jpeg;.png;.bmp;.gif;
+Quote=single
